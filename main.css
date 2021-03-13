@@ -1,0 +1,121 @@
+body {
+    padding: 71px 0 0 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.navbar {
+    background: #ffffff;
+    font-size: 1.25em;
+}
+
+.nav-link,
+.navbar-brand {
+    color: black;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.25em;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* .header {
+    background-image: url('panhuman-books-homepage.jpg');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: ;
+    background-origin: content-box;
+    padding-right: 50px;
+    position: relative;
+} */
+
+li.nav-item.active a.nav-link {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.25em;
+}
+
+.btn-primary {
+    background-color: #fab918;
+    border-color: #fab918;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.btn-secondary {
+    background-color: white;
+    border-color: black;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.badge-primary {
+    background-color: #fab918;
+    border-color: #fab918;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.badge-secondary {
+    background-color: #ca92d8;
+    border-color: #ca92d8;
+    color: black;
+    margin-bottom: 1rem;  
+}
+
+.badge-success {
+    background-color: #6dc358;
+    border-color: #6dc358;
+    color: black;
+    margin-bottom: 1rem;  
+}
+
+.badge:hover {
+    background-color: #575757 !important;
+}
+
+#section-recent-reviews {
+    margin-top: 10rem;
+}
+
+a,
+a:hover {
+    color: #833696;
+}
+
+.card-subtitle {
+    margin-bottom: 1rem;
+}
+
+/* @media only screen and (min-width: 768px) {
+    .header {
+        background-size: 500px;
+        background-position: right;
+        background-origin: content-box;
+        padding-right: 100px;
+        position: relative;
+    } 
+} */
