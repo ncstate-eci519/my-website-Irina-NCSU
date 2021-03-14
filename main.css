@@ -1,22 +1,24 @@
 body {
     padding: 71px 0 0 0;
     margin: 0;
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 .navbar {
-    background: #ffffff;
+    background-color: #ffffff;
     font-size: 1.25em;
 }
 
-.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
 .navbar-brand {
     color: black;
     cursor: pointer;
 }
 
 .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .nav-link {
@@ -33,21 +35,8 @@ body {
     color: black;
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-/* .header {
-    background-image: url('panhuman-books-homepage.jpg');
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: ;
-    background-origin: content-box;
-    padding-right: 50px;
-    position: relative;
-} */
-
 li.nav-item.active a.nav-link {
+    color: black;
     border-bottom: 2px solid black;
     padding-bottom: 0.25em;
 }
@@ -110,12 +99,16 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-/* @media only screen and (min-width: 768px) {
-    .header {
-        background-size: 500px;
-        background-position: right;
-        background-origin: content-box;
-        padding-right: 100px;
-        position: relative;
-    } 
-} */
+h2.card-title {
+    font-size: 1.25rem;
+}
+
+h3.card-subtitle {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
