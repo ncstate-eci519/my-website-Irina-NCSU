@@ -12,6 +12,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <header class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
@@ -49,9 +50,15 @@
           manifesting universal values, featuring diverse people and cultures.
           This blog provides recommendations for highly rated books with
           nonmainstream characters.</p>
-        <a href="#section-recent-reviews"
-          class="btn btn-secondary ml-5 mt-3 mb-5" role="button">View featured
-          books</a>
+        <div class="ml-5 mt-3 mb-5">
+          <a href="#section-recent-reviews" class="btn btn-secondary "
+            role="button">View featured
+            books</a>
+          <button type="button" class="ml-3 btn btn-primary" data-toggle="modal"
+            data-target="#modalSuggestion">
+            Get a suggestion
+          </button>
+        </div>
       </div>
       <div class="col-12 col-lg-7"><img src="homepage-image.jpg" alt=""
           class="img-fluid my-5"></div>
@@ -344,8 +351,141 @@
       </div>
     </div>
   </section>
-  <section id="section-2">Section 2</section>
+  <section id="section-2">
+    <div class="container text-center">
+      <h3>Join our mailing list</h3>
+      <p>Enter your email address to join our mailing list.</p>
+      <form>
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email">
+        <button type="button" class="btn btn-primary" id="join">Join the
+          List</button>
+      </form>
+      <div class="alert alert-success hidden" role="alert" id="welcome"></div>
+    </div>
+  </section>
   <section id="section-3">Section 3</section>
+
+
+  <div class="modal fade" id="modalSuggestion" tabindex="-1"
+    aria-labelledby="modalSuggestionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSuggestionLabel">Get a Suggestion
+          </h5>
+          <button type="button" class="close" data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Select your favorite age range, and we'll suggest a book:</p>
+          <div id="buttons" class="my-3">
+            <button type="button" class="btn btn-secondary"
+              id="btnChildren">Children</button> or <button type="button"
+              class="btn btn-secondary" id="btnTeen">Teen</button> or <button
+              type="button" class="btn btn-secondary"
+              id="btnAdult">Adult</button>
+          </div>
+          <div id="children" class="hidden">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="a-girl-like-me.jpg"
+                  alt="A Girl Like Me, Book Cover"></a>
+              <div class="card-body">
+                <a href="#" class="badge badge-primary">CHILDREN: AGES 5-10</a>
+                <h2 class="card-title"><a href="#">A Girl Like Me</a></h2>
+                <h3 class="card-subtitle">by Angela Johnson</h3>
+                <p class="card-text">Inspiring words by acclamaimed author
+                  Angela
+                  Johnson and vibrant photo collage illustrations by Nina Crews
+                  come
+                  together in a joyful celebration of girls that encourages
+                  everyone
+                  to reject limitations and follow their dreams.</p>
+                <p class="card-text">Angela Johnson is an award-winning poet and
+                  children's author with more than forty books to her credit.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">Children's poetry</a>
+                </li>
+                <li class="list-group-item"><a href="#">American literature</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="teen" class="hidden">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="warriors-dont-cry.jpg"
+                  alt="Warriors Don't Cry, Book Cover"></a>
+              <div class="card-body">
+                <a href="#" class="badge badge-success">TEENS: AGES 12 &amp;
+                  UP</a>
+                <h2 class="card-title"><a href="#">Warriors Don't Cry</a></h2>
+                <h3 class="card-subtitle">by Melba Pattillo Beals</h3>
+                <p class="card-text">In 1957, well before Martin Luther King’s
+                  “I
+                  Have
+                  a Dream” speech, Melba Pattillo Beals and eight other
+                  teenagers
+                  became iconic symbols for the Civil Rights Movement and the
+                  dismantling of Jim Crow in the American South as they
+                  integrated
+                  Little Rock’s Central High School.</p>
+                <p class="card-text">Throughout her harrowing ordeal, Melba was
+                  taunted by her schoolmates and their parents, threatened by a
+                  lynch
+                  mob’s rope, attacked with lighted sticks of dynamite, and
+                  injured
+                  by
+                  acid sprayed in her eyes. But through it all, she acted with
+                  dignity
+                  and courage, and refused to back down.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">Autobiography</a></li>
+                <li class="list-group-item"><a href="#">American literature</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="adult" class="hidden">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="things-fall-apart.jpg"
+                  alt="Things Fall Apart, Book Cover"></a>
+              <div class="card-body">
+                <a href="#" class="badge badge-secondary">ADULTS</a>
+                <h2 class="card-title"><a href="">Things Fall Apart</a></h2>
+                <h3 class="card-subtitle">by Chinua Achebe</h3>
+                <p class="card-text">Translated into 57 languages, <em>Things
+                    Fall
+                    Apart</em> provides one of the most illuminating and
+                  permanent
+                  monuments to African experience. Achebe does not only capture
+                  life
+                  in a pre-colonial African village, he conveys the tragedy of
+                  the
+                  loss of that world while broadening our understanding of our
+                  contemporary realities.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">Historical fiction</a>
+                </li>
+                <li class="list-group-item"><a href="#">Nigerian literature</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -353,5 +493,30 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".hidden").hide();
+      $("#btnChildren").click(function () {
+        $(".hidden").hide();
+        $("#children").toggle();
+      });
+      $("#btnTeen").click(function () {
+        $(".hidden").hide();
+        $("#teen").toggle();
+      });
+      $("#btnAdult").click(function () {
+        $(".hidden").hide();
+        $("#adult").toggle();
+      });
+
+      $("#join").click(function () {
+        $("#welcome").show();
+        $("#welcome").html("Welcome to the mailing list. We added " + $("#email").val() + " as you requested.");
+      });
+
+    });
+  </script>
 </body>
+
 </html>
