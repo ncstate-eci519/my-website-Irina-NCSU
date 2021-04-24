@@ -357,23 +357,19 @@
       </div>
     </div>
   </section>
-
-
   <section id="section-2">
     <div class="container text-center">
       <h3>Join our mailing list</h3>
       <p>Enter your email address to join our mailing list.</p>
-      <form id="my-form" action="https://formspree.io/f/xpzkweyw" method="POST">
+      <form>
         <label for="email">Email</label>
         <input name="email" id="email" type="email">
-        <button type="submit" class="btn btn-primary" id="join">Join the
+        <button type="button" class="btn btn-primary" id="join">Join the
           List</button>
       </form>
       <div class="alert alert-success hidden" role="alert" id="welcome"></div>
     </div>
   </section>
-
-
   <section id="section-3">Section 3</section>
 
 
@@ -568,32 +564,10 @@
         $("#adult").toggle();
       });
 
-      // $("#join").click(function () {
-      //   $("#welcome").show();
-      //   $("#welcome").html("Welcome to the mailing list. We added " + $("#email").val() + " as you requested.");
-      // });
-
-      var form = document.getElementById("my-form");
-
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("welcome");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            'Accept': 'application/json'
-          }
-        }).then(response => {
-          status.innerHTML = "Thanks for your submission!";
-          $("#welcome").show();
-          form.reset()
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
+      $("#join").click(function () {
+        $("#welcome").show();
+        $("#welcome").html("Welcome to the mailing list. We added " + $("#email").val() + " as you requested.");
+      });
 
     });
   </script>
