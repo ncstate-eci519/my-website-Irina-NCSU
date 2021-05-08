@@ -1,114 +1,247 @@
 body {
-    padding: 71px 0 0 0;
-    margin: 0;
-    background-color: #ffffff;
+  padding: 71px 0 0 0;
+  margin: 0;
+  background-color: #ffffff;
 }
 
 .navbar {
-    background-color: #ffffff;
-    font-size: 1.25em;
+  background-color: #ffffff;
+  font-size: 1.25em;
 }
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-brand {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 .navbar-brand {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .nav-link {
-    margin-right: 1em !important;
+  margin-right: 1em !important;
 }
 
 .nav-link:hover {
-    color: black;
-    border-bottom: 2px solid black;
-    padding-bottom: 0.25em;
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.25em;
+}
+
+.dropdow-item {
+  font-size: 20px !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  color: white;
+  background-color: black;
+  padding-bottom: 0.25em;
 }
 
 .navbar-brand:hover {
-    color: black;
-}
-
-li.nav-item.active a.nav-link {
-    color: black;
-    border-bottom: 2px solid black;
-    padding-bottom: 0.25em;
+  color: black;
 }
 
 .btn-primary {
-    background-color: #fab918;
-    border-color: #fab918;
-    color: black;
-    font-size: 1.25rem;
+  background-color: #fab918;
+  border-color: #fab918;
+  color: black;
+  font-size: 1.25rem;
 }
 
 .btn-secondary {
-    background-color: white;
-    border-color: black;
-    color: black;
-    font-size: 1.25rem;
+  background-color: white;
+  border-color: black;
+  color: black;
+  font-size: 1.25rem;
 }
 
-.btn-primary:hover {
-    background-color: black;
-    border-color: black;
-    color: white;
+.btn-primary:not(:disabled):not(.disabled):hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):focus {
+  background-color: #ca92d8;
+  border-color: #ca92d8;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled):focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem rgb(202 146 216 / 50%);
 }
 
 .badge-primary {
-    background-color: #fab918;
-    border-color: #fab918;
-    color: black;
-    margin-bottom: 1rem;
+  background-color: #fab918;
+  border-color: #fab918;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .badge-secondary {
-    background-color: #ca92d8;
-    border-color: #ca92d8;
-    color: black;
-    margin-bottom: 1rem;  
+  background-color: #ca92d8;
+  border-color: #ca92d8;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .badge-success {
-    background-color: #6dc358;
-    border-color: #6dc358;
-    color: black;
-    margin-bottom: 1rem;  
+  background-color: #6dc358;
+  border-color: #6dc358;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .badge:hover {
-    background-color: #575757 !important;
+  background-color: #575757 !important;
 }
 
 #section-recent-reviews {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 a,
 a:hover {
-    color: #833696;
+  color: #833696;
 }
 
 .card-subtitle {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2.card-title {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 h3.card-subtitle {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 576px) {
-    .navbar-brand {
-        font-size: 1.5rem;
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1220px) {
+  #buttonGap.d-xl-none {
+    display: block !important;
+  }
+  #buttonRecommend.ml-xl-3 {
+    margin-left: 0 !important;
+  }
+  #buttonRecommend.mt-xl-0 {
+    margin-top: 1rem !important;
+  }
+}
+
+hr {
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+}
+
+.form-control:focus {
+  border-color: #ca92d8;
+  box-shadow: 0 0 0 0.2rem rgb(202 146 216 / 50%);
+}
+
+.dropdown-menu {
+  font-size: 1.25rem;
+}
+
+.btn-link,
+.btn-link:focus,
+.btn-link:hover {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+#accordionChildrenBooks .btn:focus {
+  box-shadow: none;
+}
+
+#accordionChildrenBooks .card {
+  border-color: #575757;
+}
+
+#accordionChildrenBooks .card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+#accordionGenres .btn:focus {
+  box-shadow: none;
+}
+
+#accordionGenres .card {
+  border-color: black;
+}
+
+#accordionGenres .card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+#accordionCountries .btn:focus {
+  box-shadow: none;
+}
+
+#accordionCountries .card {
+  border-color: black;
+}
+
+#accordionCountries .card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.bg-primary {
+  background-color: #fab918 !important;
+  border-color: #fab918 !important;
+}
+
+.bg-secondary {
+  background-color: #ca92d8 !important;
+  border-color: #ca92d8 !important;
+}
+
+.bg-success {
+  background-color: #6dc358 !important;
+  border-color: #6dc358 !important;
+}
+
+#accordionGenres .card-header {
+  background-repeat: no-repeat;
+  background-position: right -100px top 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #accordionGenres .card-header {
+      background-position: right -50px top 0;
     }
+  }
+
+  @media only screen and (min-width: 992px) {
+    #accordionGenres .card-header {
+      background-position: right 0 top 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #accordionGenres .card-header {
+      background-image: none;
+    }
+  }
+
+#genreOne {
+  background-image: url("/images/pattern-1.png");
+}
+
+#genreTwo {
+  background-image: url("/images/pattern-2.png");
 }
